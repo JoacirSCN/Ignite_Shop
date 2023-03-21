@@ -38,6 +38,10 @@ export const Product = styled('div', {
 
     backgroundColor: 'rgba(0, 0, 0, 0.6)',
 
+    translate: 'translateY(110%)',
+    opacity: 0,
+    transition: 'all 0.2s ease-in-out',
+
     strong: {
       fontSize: '$lg',
       color: '$gray100',
@@ -47,6 +51,13 @@ export const Product = styled('div', {
       fontSize: '$xl',
       fontWeight: 'bold',
       color: '$green300',
+    },
+  },
+
+  '&:hover': {
+    footer: {
+      transform: 'translateY(0%)',
+      opacity: 1,
     },
   },
 })
